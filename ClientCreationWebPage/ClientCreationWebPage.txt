@@ -1,0 +1,19 @@
+To Build the Web Pages Using HTML.
+
+Description
+To build the Web Pages using HTML.
+
+Prerequisites:
+
+HTML
+A browser to Test the Web Pages
+
+Description:
+this assignment is designed to help understand working with various HTML tags to develop Web Pages. Further, implement the form in HTML.
+
+Problem Statement:
+Anna runs an Architectural firm. To manage her client meetings and projects, she needs project management software which will be developed by Henna Solutions, a software company in her town. In addition, the company aims to create web pages for the project to interact with the interfaces for various inputs and outputs.
+Tasks:
+Perform the below activities as a solution:
+Create a Client Creation Web Page
+Create a Client Meeting Schedule Web Page

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #EAF0F6;
+            }
+            li {
+              float: left;
+            }
+
+            li a {
+              display: block;
+              color: #33475B;
+              text-align: center;
+              font-weight: bold;
+              padding: 20px;
+              text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+    <h4>Client Meeting Schedule Web Page</h4>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ClientCreationWebPage.html">Client Creation Web Page</a></li>
+    </ul><br><br>
+
+    <form action="SendAppointmentResponse.html">
+    <table>
+        <tr title="Client Meeting Schedule">
+            <td>Email:</td>
+            <td>
+                <input type="text" id="from">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Talk about:
+            </td>
+            <td>
+                <input type="text" id="talkAbout">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <style>Description:</style>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <textarea id="Description" cols="30" rows="10" ></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Start Date:</label>
+            </td>
+            <td>
+                <input type="datetime-local" id="startDate">
+            </td>
+            <td>
+                <label>End Date:</label>
+            </td>
+            <td>
+                <input type="datetime-local" id="EndDate">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button value="Submit" id="sendAppointment" type="submit">Submit</button>
+            </td>
+            <td>
+                <button value="Submit" id="clear" type="reset">Clear</button>
+            </td>
+        </tr>
+    </table>
+    </form><br><br>
+
+
+
+    <p><a href="#top">This link goes to the top</a></p>
+    </body>
+</html>
