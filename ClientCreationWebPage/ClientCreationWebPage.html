@@ -31,64 +31,43 @@
         <li><a href="ClientCreationWebPage.html">Client Creation Web Page</a></li>
     </ul><br><br>
 
-    <form action="SendAppointmentResponse.html">
-    <table>
-        <tr title="Client Meeting Schedule">
-            <td>Email:</td>
-            <td>
-                <input type="text" id="from">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Talk about:
-            </td>
-            <td>
-                <input type="text" id="talkAbout">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <style>Description:</style>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <textarea id="Description" cols="30" rows="10" ></textarea>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label>Start Date:</label>
-            </td>
-            <td>
-                <input type="datetime-local" id="startDate">
-            </td>
-            <td>
-                <label>End Date:</label>
-            </td>
-            <td>
-                <input type="datetime-local" id="EndDate">
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <button value="Submit" id="sendAppointment" type="submit">Submit</button>
-            </td>
-            <td>
-                <button value="Submit" id="clear" type="reset">Clear</button>
-            </td>
-        </tr>
-    </table>
-    </form><br><br>
-
-
-
+        
+        <form  id="form"  method="GET" action="SendAppointmentResponse.html">
+            <table>
+                    <tr title="Client Meeting Schedule">
+                        <td>name</td>
+                        <td><input type="text" id="names" name="names" placeholder="Enter username"/><span style="color: red;" id="name_error"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="text" id="email" name="email" placeholder="Enter email"/><span style="color: red;" id="email_error"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Talk about</td>
+                        <td><input type="text" id="talkAbout" placeholder="Describe what is the conversation"/></td>
+                    </tr>
+                    <tr>
+                        <td><styles>Description</styles></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea id="Description" cols="30" rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label>Start Date</label></td>
+                        <td><input type="datetime-local" id="startDate"/></td>
+                        <td><label>End Date</label></td>
+                        <td><input type="datetime-local" id="EndDate"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td><button type = 'Submit' id="sendAppointment">Submit</button></td>
+                        <td><button  id="clear" type="reset">Clear</button></td>
+                    </tr>
+            </table>
+        </form>
+        <script src="validations.js"></script>
     <p><a href="#top">This link goes to the top</a></p>
     </body>
 </html>
